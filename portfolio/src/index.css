@@ -1,0 +1,107 @@
+/* Resetting default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styling navigation bar */
+.navbar {
+  background-color: #f0b9b9;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  list-style: none;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.nav-links {
+  list-style-type: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-links li a:hover {
+  color: #ffcc00;
+}
+
+/* Styling content area */
+.content {
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.content h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+
+}
+
+.content p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.item1{
+  grid-area: header;
+  display: grid;
+  grid-template-columns: auto auto ;
+}
+.item2{
+  grid-area: menu;
+  background: url("../public/siranjeevi.jpg") no-repeat;
+  background-size: contain;
+}
+.item3{
+  grid-area: main;
+}
+/* .item4{
+  grid-area: right;
+} */
+.item5{
+  grid-area: footer;
+}
+.grid-home{
+  display: grid;
+  grid-template-areas: 
+  'header header header header header'
+  'menu menu main main main'
+  'menu menu footer footer footer'
+  ;
+
+ gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  height: 900px;
+}
+
+.grid-home > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.head-content1{
+  font-size: 100px;
+}
